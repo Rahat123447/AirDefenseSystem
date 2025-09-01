@@ -1,0 +1,73 @@
+/* client/src/HomeDashboard.css */
+
+.home-dashboard-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #2e3540; /* Darker background for the main dashboard */
+  min-height: calc(100vh - 100px); /* Adjust based on header height */
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-dashboard-container h2 {
+  color: #61dafb;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+.home-dashboard-container p {
+  font-size: 1.1em;
+  color: #a0a8b4;
+  margin-bottom: 40px;
+}
+
+.dashboard-navigation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.nav-card {
+  background-color: #3a3f47;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none; /* Remove underline from Link */
+  color: white;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push description down if title is short */
+  align-items: center;
+  text-align: center;
+}
+
+.nav-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background-color: #4c525d; /* Slightly lighter on hover */
+}
+
+.nav-card h3 {
+  color: #90ee90; /* Green for card titles */
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+.nav-card p {
+  color: #d1d1d1;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.nav-card.admin-feature {
+    border: 2px solid #f39c12; /* Orange border for admin features */
+}
+
+.nav-card.admin-feature:hover {
+    border-color: #e67e22;
+}

@@ -1,0 +1,15 @@
+# Node.js
+node_modules
+.env
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.DS_Store
+
+# Build artifacts (for React app)
+client/build
+client/.env # Explicitly ignore .env in client if created there too
+server/.env # Explicitly ignore .env in server
+
+# VS Code
+.vscode/

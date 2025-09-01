@@ -1,0 +1,69 @@
+/* client/src/App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack Navbar and main content vertically */
+}
+
+/* No App-header styling needed anymore as Navbar handles header */
+/* h1 and h2 styling is now in individual page components or Navbar */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #444;
+  margin: 10px auto; /* Centered with auto margins */
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.user-info { /* This styling is now primarily handled by Navbar.css */
+  display: none; /* Hide if Navbar is used */
+}
+
+.logout-button { /* This styling is now primarily handled by Navbar.css */
+  display: none; /* Hide if Navbar is used */
+}
+
+/* NEW: Styles for the main content area below the Navbar */
+.app-main-content {
+  flex-grow: 1; /* Allows main content to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* General styles for page containers to provide consistent padding */
+.page-container {
+    width: 100%;
+    max-width: 1200px; /* Max width for consistent page content */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items within the page */
+    gap: 30px; /* Space between sections on a page */
+}
+
+.page-container h2 {
+    color: #90ee90;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* The generate-alert-section and its button styles will be reused within AutomatedAlertsPage.css */
+/* Removed from App.css as it's now specific to a page component */
+/* The radar-list styles are now more generic for ul/li on pages */

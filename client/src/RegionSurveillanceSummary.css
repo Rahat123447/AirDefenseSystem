@@ -1,0 +1,87 @@
+/* client/src/RegionSurveillanceSummary.css */
+
+.region-summary-container {
+  background-color: #3a3f47;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 90%;
+  max-width: 900px; /* Wider for table */
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+
+.region-summary-container h3 {
+  color: #61dafb;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.summary-table th,
+.summary-table td {
+  border: 1px solid #555;
+  padding: 12px;
+  text-align: center;
+}
+
+.summary-table th {
+  background-color: #444;
+  color: #90ee90;
+  font-weight: bold;
+}
+
+.summary-table td {
+  background-color: #2e3540;
+}
+
+.summary-table tbody tr:nth-child(even) td {
+  background-color: #343a40; /* Slightly different background for even rows */
+}
+
+/* Status colors */
+.status-active {
+  color: #2ecc71; /* Green */
+  font-weight: bold;
+}
+
+.status-inactive {
+  color: #e74c3c; /* Red */
+  font-weight: bold;
+}
+
+.status-maintenance {
+  color: #f1c40f; /* Yellow */
+  font-weight: bold;
+}
+
+.high-threat-cell {
+  color: #e74c3c; /* Red text for high threats */
+  font-weight: bold;
+}
+
+/* Messages (reusing from other components) */
+.loading-message, .error-message {
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.loading-message {
+  background-color: #e0f2f7;
+  color: #01579b;
+}
+
+.error-message {
+  background-color: #ffe0b2;
+  color: #e65100;
+}

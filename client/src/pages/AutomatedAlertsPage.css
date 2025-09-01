@@ -1,0 +1,40 @@
+/* client/src/pages/AutomatedAlertsPage.css */
+
+/* These styles were previously in App.css but are specific to this page */
+.generate-alert-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #3a3f47;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.generate-alert-button {
+    background-color: #f39c12; /* Orange for warning/action */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.generate-alert-button:hover:not(:disabled) {
+    background-color: #e67e22;
+}
+
+.generate-alert-button:disabled {
+    background-color: #5a5f6b;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.generate-alert-section .form-message {
+    margin-bottom: 15px;
+}

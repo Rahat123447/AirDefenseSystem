@@ -1,0 +1,66 @@
+/* client/src/Navbar.css */
+
+.navbar {
+  background-color: #1a1e24; /* Darker background for navbar */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-brand .app-title-link {
+  color: #61dafb;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active { /* 'active' class for the currently selected link if you implement it */
+  background-color: #444;
+  color: #61dafb;
+}
+
+.navbar-user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.9em;
+  color: #a0a8b4;
+}
+
+.navbar-user-info .logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-user-info .logout-button:hover {
+  background-color: #c0392b;
+}

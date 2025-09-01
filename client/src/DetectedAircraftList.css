@@ -1,0 +1,142 @@
+/* client/src/DetectedAircraftList.css */
+
+.detected-aircraft-list-container {
+  background-color: #3a3f47;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  width: 90%;
+  max-width: 800px;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+
+.detected-aircraft-list-container h3 {
+  color: #61dafb;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.aircraft-list {
+  list-style: none;
+  padding: 0;
+}
+
+.aircraft-item {
+  background-color: #444;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  border: 1px solid #555;
+}
+
+.aircraft-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+}
+
+.aircraft-header strong {
+  font-size: 1.2em;
+  color: #90ee90;
+}
+
+.aircraft-details p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #d1d1d1;
+}
+
+/* Threat Level Badges */
+.threat-badge {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #fff;
+  min-width: 80px; /* Ensure consistent width */
+  text-align: center;
+}
+
+.threat-level-unknown .threat-badge {
+  background-color: #7f8c8d; /* Grey */
+}
+
+.threat-level-low .threat-badge {
+  background-color: #2ecc71; /* Green */
+}
+
+.threat-level-moderate .threat-badge {
+  background-color: #f1c40f; /* Yellow */
+}
+
+.threat-level-high .threat-badge {
+  background-color: #e74c3c; /* Red */
+}
+
+.threat-level-critical .threat-badge {
+  background-color: #c0392b; /* Dark Red */
+}
+
+
+/* Messages */
+.loading-message, .error-message {
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.loading-message {
+  background-color: #e0f2f7;
+  color: #01579b;
+}
+
+.error-message {
+  background-color: #ffe0b2;
+  color: #e65100;
+}
+
+/* Styles for action buttons */
+.aircraft-actions {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.override-threat-button {
+  background-color: #f1c40f; /* Yellowish for warning/override */
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.override-threat-button:hover {
+  background-color: #e6b300;
+}
+
+.initiate-interception-button {
+  background-color: #e74c3c; /* Red for Intercept */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px; /* Space from Manage Threat button */
+  transition: background-color 0.3s ease;
+}
+
+.initiate-interception-button:hover {
+  background-color: #c0392b;
+}
