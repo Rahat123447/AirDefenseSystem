@@ -61,28 +61,28 @@
   font-weight: bold;
   font-size: 0.8em;
   color: #fff;
-  min-width: 80px; /* Ensure consistent width */
+  min-width: 80px;
   text-align: center;
 }
 
 .threat-level-unknown .threat-badge {
-  background-color: #7f8c8d; /* Grey */
+  background-color: #7f8c8d;
 }
 
 .threat-level-low .threat-badge {
-  background-color: #2ecc71; /* Green */
+  background-color: #2ecc71;
 }
 
 .threat-level-moderate .threat-badge {
-  background-color: #f1c40f; /* Yellow */
+  background-color: #f1c40f;
 }
 
 .threat-level-high .threat-badge {
-  background-color: #e74c3c; /* Red */
+  background-color: #e74c3c;
 }
 
 .threat-level-critical .threat-badge {
-  background-color: #c0392b; /* Dark Red */
+  background-color: #c0392b;
 }
 
 
@@ -111,7 +111,7 @@
 }
 
 .override-threat-button {
-  background-color: #f1c40f; /* Yellowish for warning/override */
+  background-color: #f1c40f;
   color: #333;
   border: none;
   padding: 8px 15px;
@@ -126,14 +126,14 @@
 }
 
 .initiate-interception-button {
-  background-color: #e74c3c; /* Red for Intercept */
+  background-color: #e74c3c;
   color: white;
   border: none;
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 10px; /* Space from Manage Threat button */
+  margin-left: 10px;
   transition: background-color 0.3s ease;
 }
 
